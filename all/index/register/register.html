@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Modern App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <main class="register-main">
+        <div class="register-card">
+            <div class="register-header">
+                <h2>Create Account</h2>
+                <p>Join us today! Please fill in your details.</p>
+            </div>
+            <form class="register-form">
+                <div class="input-group">
+                    <input class="register-input" type="text" placeholder="First Name" required>
+                </div>
+                <div class="input-group">
+                    <input class="register-input" type="text" placeholder="Last Name" required>
+                </div>
+                <div class="input-group">
+                    <input class="register-input" type="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <input class="register-input" type="password" placeholder="Password" required>
+                </div>
+                <button class="register-button" type="submit" onclick="window.location.href='../index.html'; return false;">Sign Up</button>
+            </form>
+            <div class="register-footer">
+                <p>Already have an account? <a href="../login/login.html" class="login-link">Sign in here</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
