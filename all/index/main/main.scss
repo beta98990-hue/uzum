@@ -185,3 +185,100 @@
         }
     }
 }
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+
+        li {
+            text-decoration: none;
+
+            &:hover {
+                color: aqua;
+                cursor: pointer;
+
+            }
+
+            a {
+                padding-right: 20px;
+                font-size: 18px;
+                font-weight: 500;
+                color: #555;
+                transition: color 0.3s ease;
+                
+                &:hover {
+                    color: #7000ff;
+                }
+            }
+        }
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+.header-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 8px 20px;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+
+        &:first-child {
+            color: #7000ff;
+            background: rgba(112, 0, 255, 0.1);
+            
+            &:hover {
+                background: rgba(112, 0, 255, 0.2);
+            }
+        }
+
+        &:last-child {
+            color: white;
+            background: #7000ff;
+            box-shadow: 0 4px 10px rgba(112, 0, 255, 0.2);
+
+            &:hover {
+                background: #5900cc;
+                transform: translateY(-2px);
+                box-shadow: 0 6px 15px rgba(112, 0, 255, 0.3);
+            }
+        }
+    }
+}
