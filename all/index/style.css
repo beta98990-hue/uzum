@@ -609,3 +609,12 @@ header {
  width: 200px !important;
  }
 }
+
+@media (max-width: 320px) {
+ .products-section  {
+  width: 300px !important;
+  font-size: 24px;
+  text-align: center; 
+  margin: auto;
+ }
+}
